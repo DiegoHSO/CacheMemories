@@ -1,0 +1,1211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Z:/OneDrive - PUCRS - BR/PUCRS/2021-1/Arquitetura de Computadores II/Trabalhos/T3/T3_L1_L2 - Diego/T3Arq/CPU_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="aux_functions" />
+            <top_module name="cpu_tb" />
+            <top_module name="p_mips_mcs" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_signed" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="56" />
+   <wvobject fp_name="/cpu_tb/cpu/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu/clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/l2_ck" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">l2_ck</obj_property>
+      <obj_property name="ObjectShortName">l2_ck</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/mem_ck" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_ck</obj_property>
+      <obj_property name="ObjectShortName">mem_ck</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu/i_address" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">i_address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i_address[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu/instruction" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu/uins.i" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">.i</obj_property>
+      <obj_property name="ObjectShortName">uins.i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu/ct/ps" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">ps</obj_property>
+      <obj_property name="ObjectShortName">ps</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu/d_address" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">d_address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">d_address[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu/data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu/ce" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ce</obj_property>
+      <obj_property name="ObjectShortName">ce</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/Data_mem/ce_n" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ce_n</obj_property>
+      <obj_property name="ObjectShortName">ce_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/Data_mem/we_n" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">we_n</obj_property>
+      <obj_property name="ObjectShortName">we_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/dce_n" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dce_n</obj_property>
+      <obj_property name="ObjectShortName">dce_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/doe_n" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">doe_n</obj_property>
+      <obj_property name="ObjectShortName">doe_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu/rw" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rw</obj_property>
+      <obj_property name="ObjectShortName">rw</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu/bw" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">bw</obj_property>
+      <obj_property name="ObjectShortName">bw</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu/dp/hi" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">hi[31:0]</obj_property>
+      <obj_property name="ObjectShortName">hi[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu/dp/lo" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">lo[31:0]</obj_property>
+      <obj_property name="ObjectShortName">lo[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu/dp/REGS/reg[1]" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[1]</obj_property>
+      <obj_property name="ObjectShortName">reg[1]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">$at</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu/dp/REGS/reg[8]" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[8]</obj_property>
+      <obj_property name="ObjectShortName">reg[8]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">$t0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu/dp/REGS/reg[9]" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[9]</obj_property>
+      <obj_property name="ObjectShortName">reg[9]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">$t1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu/dp/REGS/reg[10]" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[10]</obj_property>
+      <obj_property name="ObjectShortName">reg[10]</obj_property>
+      <obj_property name="label">$t2</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu/dp/REGS/reg[11]" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[11]</obj_property>
+      <obj_property name="ObjectShortName">reg[11]</obj_property>
+      <obj_property name="label">$t3</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu/dp/REGS/reg[12]" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[12]</obj_property>
+      <obj_property name="ObjectShortName">reg[12]</obj_property>
+      <obj_property name="label">$t4</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu/dp/REGS/reg[13]" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[13]</obj_property>
+      <obj_property name="ObjectShortName">reg[13]</obj_property>
+      <obj_property name="label">$t5</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu/dp/REGS/reg[14]" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[14]</obj_property>
+      <obj_property name="ObjectShortName">reg[14]</obj_property>
+      <obj_property name="label">$t6</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu/dp/REGS/reg[15]" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[15]</obj_property>
+      <obj_property name="ObjectShortName">reg[15]</obj_property>
+      <obj_property name="label">$t7</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu/dp/REGS/reg[24]" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[24]</obj_property>
+      <obj_property name="ObjectShortName">reg[24]</obj_property>
+      <obj_property name="label">$t8</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu/dp/REGS/reg[25]" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[25]</obj_property>
+      <obj_property name="ObjectShortName">reg[25]</obj_property>
+      <obj_property name="label">$t9</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu/dp/REGS/reg[16]" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[16]</obj_property>
+      <obj_property name="ObjectShortName">reg[16]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">$s0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu/dp/REGS/reg[17]" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[17]</obj_property>
+      <obj_property name="ObjectShortName">reg[17]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">$s1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu/dp/REGS/reg[18]" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[18]</obj_property>
+      <obj_property name="ObjectShortName">reg[18]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">$s2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu/dp/REGS/reg[19]" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[19]</obj_property>
+      <obj_property name="ObjectShortName">reg[19]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">$s3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu/dp/REGS/reg[29]" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[29]</obj_property>
+      <obj_property name="ObjectShortName">reg[29]</obj_property>
+      <obj_property name="label">$sp</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu/dp/REGS/reg[31]" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[31]</obj_property>
+      <obj_property name="ObjectShortName">reg[31]</obj_property>
+      <obj_property name="label">$ra</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/Data_mem/tmp_address" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tmp_address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tmp_address[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider239" type="divider">
+      <obj_property name="label">Caches Control Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/end_write" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">end_write</obj_property>
+      <obj_property name="ObjectShortName">end_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/end_fetch" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">end_fetch</obj_property>
+      <obj_property name="ObjectShortName">end_fetch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/Data_mem/writeram" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">writeram</obj_property>
+      <obj_property name="ObjectShortName">writeram</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/writeram_wb" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">writeram_wb</obj_property>
+      <obj_property name="ObjectShortName">writeram_wb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/Data_mem/writecpu" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">writecpu</obj_property>
+      <obj_property name="ObjectShortName">writecpu</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/Data_mem/writeback" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">writeback</obj_property>
+      <obj_property name="ObjectShortName">writeback</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/Data_mem/writel1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">writel1</obj_property>
+      <obj_property name="ObjectShortName">writel1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/Data_mem/writel2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">writel2</obj_property>
+      <obj_property name="ObjectShortName">writel2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/Data_mem/writel2_wb" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">writel2_wb</obj_property>
+      <obj_property name="ObjectShortName">writel2_wb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/Data_mem/searchl2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">searchl2</obj_property>
+      <obj_property name="ObjectShortName">searchl2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/Data_mem/searchram" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">searchram</obj_property>
+      <obj_property name="ObjectShortName">searchram</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/Data_mem/searchram_wb" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">searchram_wb</obj_property>
+      <obj_property name="ObjectShortName">searchram_wb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/Data_mem/next_to_replace" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">next_to_replace</obj_property>
+      <obj_property name="ObjectShortName">next_to_replace</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/Data_mem/write_done" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">write_done</obj_property>
+      <obj_property name="ObjectShortName">write_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider54" type="divider">
+      <obj_property name="label">Cache L1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/Data_mem/l1cache" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">l1cache[0:3]</obj_property>
+      <obj_property name="ObjectShortName">l1cache[0:3]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <wvobject fp_name="/cpu_tb/Data_mem/l1cache[0]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">l1cache[0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <wvobject fp_name="/cpu_tb/Data_mem/l1cache[0].validation_bit" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">.validation_bit</obj_property>
+            <obj_property name="ObjectShortName">l1cache[0].validation_bit</obj_property>
+         </wvobject>
+         <wvobject fp_name="/cpu_tb/Data_mem/l1cache[0].tag" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">.tag</obj_property>
+            <obj_property name="ObjectShortName">l1cache[0].tag</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/cpu_tb/Data_mem/l1cache[0].words" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">.words</obj_property>
+            <obj_property name="ObjectShortName">l1cache[0].words</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/Data_mem/l1cache[1]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">l1cache[1]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <wvobject fp_name="/cpu_tb/Data_mem/l1cache[1].validation_bit" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">.validation_bit</obj_property>
+            <obj_property name="ObjectShortName">l1cache[1].validation_bit</obj_property>
+         </wvobject>
+         <wvobject fp_name="/cpu_tb/Data_mem/l1cache[1].tag" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">.tag</obj_property>
+            <obj_property name="ObjectShortName">l1cache[1].tag</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/cpu_tb/Data_mem/l1cache[1].words" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">.words</obj_property>
+            <obj_property name="ObjectShortName">l1cache[1].words</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/Data_mem/l1cache[2]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">l1cache[2]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <wvobject fp_name="/cpu_tb/Data_mem/l1cache[2].validation_bit" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">.validation_bit</obj_property>
+            <obj_property name="ObjectShortName">l1cache[2].validation_bit</obj_property>
+         </wvobject>
+         <wvobject fp_name="/cpu_tb/Data_mem/l1cache[2].tag" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">.tag</obj_property>
+            <obj_property name="ObjectShortName">l1cache[2].tag</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/cpu_tb/Data_mem/l1cache[2].words" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">.words</obj_property>
+            <obj_property name="ObjectShortName">l1cache[2].words</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/Data_mem/l1cache[3]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">l1cache[3]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <wvobject fp_name="/cpu_tb/Data_mem/l1cache[3].validation_bit" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">.validation_bit</obj_property>
+            <obj_property name="ObjectShortName">l1cache[3].validation_bit</obj_property>
+         </wvobject>
+         <wvobject fp_name="/cpu_tb/Data_mem/l1cache[3].tag" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">.tag</obj_property>
+            <obj_property name="ObjectShortName">l1cache[3].tag</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/cpu_tb/Data_mem/l1cache[3].words" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">.words</obj_property>
+            <obj_property name="ObjectShortName">l1cache[3].words</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="divider55" type="divider">
+      <obj_property name="label">Cache L2</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/Data_mem/l2cache" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">l2cache[0:7]</obj_property>
+      <obj_property name="ObjectShortName">l2cache[0:7]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <wvobject fp_name="/cpu_tb/Data_mem/l2cache[0]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">l2cache[0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <wvobject fp_name="/cpu_tb/Data_mem/l2cache[0].validation_bit" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">.validation_bit</obj_property>
+            <obj_property name="ObjectShortName">l2cache[0].validation_bit</obj_property>
+         </wvobject>
+         <wvobject fp_name="/cpu_tb/Data_mem/l2cache[0].dirty_bit" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">.dirty_bit</obj_property>
+            <obj_property name="ObjectShortName">l2cache[0].dirty_bit</obj_property>
+         </wvobject>
+         <wvobject fp_name="/cpu_tb/Data_mem/l2cache[0].tag" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">.tag</obj_property>
+            <obj_property name="ObjectShortName">l2cache[0].tag</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/cpu_tb/Data_mem/l2cache[0].words" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">.words</obj_property>
+            <obj_property name="ObjectShortName">l2cache[0].words</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[0].words[0]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[0]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[0].words[0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[0].words[1]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[1]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[0].words[1]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[0].words[2]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[2]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[0].words[2]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[0].words[3]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[3]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[0].words[3]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[0].words[4]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[4]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[0].words[4]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[0].words[5]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[5]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[0].words[5]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[0].words[6]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[6]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[0].words[6]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[0].words[7]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[7]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[0].words[7]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[0].words[8]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[8]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[0].words[8]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[0].words[9]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[9]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[0].words[9]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[0].words[10]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[10]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[0].words[10]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[0].words[11]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[11]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[0].words[11]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[0].words[12]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[12]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[0].words[12]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[0].words[13]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[13]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[0].words[13]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[0].words[14]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[14]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[0].words[14]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[0].words[15]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[15]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[0].words[15]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/Data_mem/l2cache[1]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">l2cache[1]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <wvobject fp_name="/cpu_tb/Data_mem/l2cache[1].validation_bit" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">.validation_bit</obj_property>
+            <obj_property name="ObjectShortName">l2cache[1].validation_bit</obj_property>
+         </wvobject>
+         <wvobject fp_name="/cpu_tb/Data_mem/l2cache[1].dirty_bit" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">.dirty_bit</obj_property>
+            <obj_property name="ObjectShortName">l2cache[1].dirty_bit</obj_property>
+         </wvobject>
+         <wvobject fp_name="/cpu_tb/Data_mem/l2cache[1].tag" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">.tag</obj_property>
+            <obj_property name="ObjectShortName">l2cache[1].tag</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/cpu_tb/Data_mem/l2cache[1].words" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">.words</obj_property>
+            <obj_property name="ObjectShortName">l2cache[1].words</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[1].words[0]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[0]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[1].words[0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[1].words[1]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[1]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[1].words[1]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[1].words[2]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[2]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[1].words[2]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[1].words[3]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[3]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[1].words[3]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[1].words[4]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[4]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[1].words[4]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[1].words[5]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[5]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[1].words[5]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[1].words[6]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[6]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[1].words[6]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[1].words[7]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[7]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[1].words[7]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[1].words[8]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[8]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[1].words[8]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[1].words[9]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[9]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[1].words[9]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[1].words[10]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[10]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[1].words[10]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[1].words[11]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[11]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[1].words[11]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[1].words[12]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[12]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[1].words[12]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[1].words[13]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[13]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[1].words[13]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[1].words[14]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[14]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[1].words[14]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[1].words[15]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[15]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[1].words[15]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/Data_mem/l2cache[2]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">l2cache[2]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <wvobject fp_name="/cpu_tb/Data_mem/l2cache[2].validation_bit" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">.validation_bit</obj_property>
+            <obj_property name="ObjectShortName">l2cache[2].validation_bit</obj_property>
+         </wvobject>
+         <wvobject fp_name="/cpu_tb/Data_mem/l2cache[2].dirty_bit" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">.dirty_bit</obj_property>
+            <obj_property name="ObjectShortName">l2cache[2].dirty_bit</obj_property>
+         </wvobject>
+         <wvobject fp_name="/cpu_tb/Data_mem/l2cache[2].tag" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">.tag</obj_property>
+            <obj_property name="ObjectShortName">l2cache[2].tag</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/cpu_tb/Data_mem/l2cache[2].words" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">.words</obj_property>
+            <obj_property name="ObjectShortName">l2cache[2].words</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[2].words[0]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[0]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[2].words[0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[2].words[1]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[1]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[2].words[1]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[2].words[2]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[2]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[2].words[2]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[2].words[3]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[3]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[2].words[3]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[2].words[4]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[4]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[2].words[4]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[2].words[5]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[5]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[2].words[5]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[2].words[6]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[6]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[2].words[6]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[2].words[7]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[7]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[2].words[7]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[2].words[8]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[8]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[2].words[8]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[2].words[9]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[9]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[2].words[9]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[2].words[10]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[10]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[2].words[10]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[2].words[11]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[11]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[2].words[11]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[2].words[12]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[12]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[2].words[12]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[2].words[13]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[13]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[2].words[13]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[2].words[14]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[14]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[2].words[14]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[2].words[15]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[15]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[2].words[15]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/Data_mem/l2cache[3]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">l2cache[3]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <wvobject fp_name="/cpu_tb/Data_mem/l2cache[3].validation_bit" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">.validation_bit</obj_property>
+            <obj_property name="ObjectShortName">l2cache[3].validation_bit</obj_property>
+         </wvobject>
+         <wvobject fp_name="/cpu_tb/Data_mem/l2cache[3].dirty_bit" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">.dirty_bit</obj_property>
+            <obj_property name="ObjectShortName">l2cache[3].dirty_bit</obj_property>
+         </wvobject>
+         <wvobject fp_name="/cpu_tb/Data_mem/l2cache[3].tag" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">.tag</obj_property>
+            <obj_property name="ObjectShortName">l2cache[3].tag</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/cpu_tb/Data_mem/l2cache[3].words" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">.words</obj_property>
+            <obj_property name="ObjectShortName">l2cache[3].words</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[3].words[0]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[0]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[3].words[0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[3].words[1]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[1]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[3].words[1]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[3].words[2]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[2]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[3].words[2]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[3].words[3]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[3]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[3].words[3]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[3].words[4]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[4]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[3].words[4]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[3].words[5]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[5]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[3].words[5]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[3].words[6]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[6]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[3].words[6]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[3].words[7]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[7]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[3].words[7]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[3].words[8]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[8]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[3].words[8]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[3].words[9]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[9]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[3].words[9]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[3].words[10]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[10]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[3].words[10]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[3].words[11]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[11]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[3].words[11]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[3].words[12]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[12]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[3].words[12]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[3].words[13]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[13]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[3].words[13]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[3].words[14]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[14]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[3].words[14]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[3].words[15]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[15]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[3].words[15]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/Data_mem/l2cache[4]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">l2cache[4]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <wvobject fp_name="/cpu_tb/Data_mem/l2cache[4].validation_bit" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">.validation_bit</obj_property>
+            <obj_property name="ObjectShortName">l2cache[4].validation_bit</obj_property>
+         </wvobject>
+         <wvobject fp_name="/cpu_tb/Data_mem/l2cache[4].dirty_bit" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">.dirty_bit</obj_property>
+            <obj_property name="ObjectShortName">l2cache[4].dirty_bit</obj_property>
+         </wvobject>
+         <wvobject fp_name="/cpu_tb/Data_mem/l2cache[4].tag" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">.tag</obj_property>
+            <obj_property name="ObjectShortName">l2cache[4].tag</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/cpu_tb/Data_mem/l2cache[4].words" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">.words</obj_property>
+            <obj_property name="ObjectShortName">l2cache[4].words</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[4].words[0]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[0]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[4].words[0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[4].words[1]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[1]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[4].words[1]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[4].words[2]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[2]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[4].words[2]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[4].words[3]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[3]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[4].words[3]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[4].words[4]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[4]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[4].words[4]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[4].words[5]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[5]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[4].words[5]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[4].words[6]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[6]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[4].words[6]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[4].words[7]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[7]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[4].words[7]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[4].words[8]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[8]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[4].words[8]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[4].words[9]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[9]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[4].words[9]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[4].words[10]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[10]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[4].words[10]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[4].words[11]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[11]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[4].words[11]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[4].words[12]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[12]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[4].words[12]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[4].words[13]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[13]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[4].words[13]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[4].words[14]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[14]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[4].words[14]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[4].words[15]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[15]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[4].words[15]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/Data_mem/l2cache[5]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">l2cache[5]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <wvobject fp_name="/cpu_tb/Data_mem/l2cache[5].validation_bit" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">.validation_bit</obj_property>
+            <obj_property name="ObjectShortName">l2cache[5].validation_bit</obj_property>
+         </wvobject>
+         <wvobject fp_name="/cpu_tb/Data_mem/l2cache[5].dirty_bit" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">.dirty_bit</obj_property>
+            <obj_property name="ObjectShortName">l2cache[5].dirty_bit</obj_property>
+         </wvobject>
+         <wvobject fp_name="/cpu_tb/Data_mem/l2cache[5].tag" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">.tag</obj_property>
+            <obj_property name="ObjectShortName">l2cache[5].tag</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/cpu_tb/Data_mem/l2cache[5].words" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">.words</obj_property>
+            <obj_property name="ObjectShortName">l2cache[5].words</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[5].words[0]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[0]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[5].words[0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[5].words[1]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[1]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[5].words[1]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[5].words[2]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[2]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[5].words[2]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[5].words[3]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[3]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[5].words[3]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[5].words[4]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[4]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[5].words[4]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[5].words[5]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[5]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[5].words[5]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[5].words[6]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[6]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[5].words[6]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[5].words[7]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[7]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[5].words[7]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[5].words[8]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[8]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[5].words[8]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[5].words[9]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[9]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[5].words[9]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[5].words[10]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[10]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[5].words[10]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[5].words[11]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[11]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[5].words[11]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[5].words[12]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[12]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[5].words[12]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[5].words[13]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[13]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[5].words[13]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[5].words[14]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[14]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[5].words[14]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[5].words[15]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[15]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[5].words[15]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/Data_mem/l2cache[6]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">l2cache[6]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <wvobject fp_name="/cpu_tb/Data_mem/l2cache[6].validation_bit" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">.validation_bit</obj_property>
+            <obj_property name="ObjectShortName">l2cache[6].validation_bit</obj_property>
+         </wvobject>
+         <wvobject fp_name="/cpu_tb/Data_mem/l2cache[6].dirty_bit" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">.dirty_bit</obj_property>
+            <obj_property name="ObjectShortName">l2cache[6].dirty_bit</obj_property>
+         </wvobject>
+         <wvobject fp_name="/cpu_tb/Data_mem/l2cache[6].tag" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">.tag</obj_property>
+            <obj_property name="ObjectShortName">l2cache[6].tag</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/cpu_tb/Data_mem/l2cache[6].words" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">.words</obj_property>
+            <obj_property name="ObjectShortName">l2cache[6].words</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[6].words[0]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[0]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[6].words[0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[6].words[1]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[1]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[6].words[1]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[6].words[2]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[2]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[6].words[2]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[6].words[3]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[3]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[6].words[3]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[6].words[4]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[4]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[6].words[4]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[6].words[5]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[5]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[6].words[5]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[6].words[6]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[6]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[6].words[6]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[6].words[7]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[7]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[6].words[7]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[6].words[8]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[8]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[6].words[8]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[6].words[9]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[9]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[6].words[9]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[6].words[10]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[10]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[6].words[10]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[6].words[11]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[11]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[6].words[11]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[6].words[12]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[12]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[6].words[12]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[6].words[13]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[13]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[6].words[13]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[6].words[14]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[14]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[6].words[14]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[6].words[15]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[15]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[6].words[15]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/cpu_tb/Data_mem/l2cache[7]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">l2cache[7]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <wvobject fp_name="/cpu_tb/Data_mem/l2cache[7].validation_bit" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">.validation_bit</obj_property>
+            <obj_property name="ObjectShortName">l2cache[7].validation_bit</obj_property>
+         </wvobject>
+         <wvobject fp_name="/cpu_tb/Data_mem/l2cache[7].dirty_bit" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">.dirty_bit</obj_property>
+            <obj_property name="ObjectShortName">l2cache[7].dirty_bit</obj_property>
+         </wvobject>
+         <wvobject fp_name="/cpu_tb/Data_mem/l2cache[7].tag" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">.tag</obj_property>
+            <obj_property name="ObjectShortName">l2cache[7].tag</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/cpu_tb/Data_mem/l2cache[7].words" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">.words</obj_property>
+            <obj_property name="ObjectShortName">l2cache[7].words</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[7].words[0]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[0]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[7].words[0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[7].words[1]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[1]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[7].words[1]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[7].words[2]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[2]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[7].words[2]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[7].words[3]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[3]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[7].words[3]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[7].words[4]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[4]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[7].words[4]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[7].words[5]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[5]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[7].words[5]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[7].words[6]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[6]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[7].words[6]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[7].words[7]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[7]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[7].words[7]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[7].words[8]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[8]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[7].words[8]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[7].words[9]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[9]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[7].words[9]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[7].words[10]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[10]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[7].words[10]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[7].words[11]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[11]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[7].words[11]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[7].words[12]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[12]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[7].words[12]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[7].words[13]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[13]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[7].words[13]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[7].words[14]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[14]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[7].words[14]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/cpu_tb/Data_mem/l2cache[7].words[15]" type="array" db_ref_id="1">
+               <obj_property name="ElementShortName">[15]</obj_property>
+               <obj_property name="ObjectShortName">l2cache[7].words[15]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>
